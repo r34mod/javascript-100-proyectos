@@ -1,0 +1,141 @@
+/* Reset some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3a39ef; /* Background blue */
+    color: white;
+}
+
+
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white; /* White background */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    margin: 20px 5%; /* Add space from the top and sides */
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3a39ef; /* Blue color */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #3a39ef; /* Blue text for links */
+    font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    color: #f04f31; /* Orange hover color */
+}
+
+.navbar .btn-login {
+    padding: 10px 20px;
+    background-color: white; /* Always the same as navbar */
+    color: #3a39ef; /* Blue text */
+    border: 2px solid #3a39ef; /* Blue border */
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar .btn-login:hover {
+    background-color: #3a39ef; /* Background becomes blue */
+    color: white; /* Text turns white */
+}
+
+/* Book Section Styles */
+.books-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 50px 5%;
+    background-color: #f7f7f7; /* Light background */
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 30%;
+    min-width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+}
+
+.book-info {
+    padding: 20px;
+}
+
+.book-info h2 {
+    font-size: 1.5em;
+    color: #3a39ef;
+}
+
+.book-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.author span {
+    color: #999;
+}
+
+.book-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3a39ef; /* Blue button */
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #f04f31; /* Orange on hover */
+}
